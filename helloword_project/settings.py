@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e=tp(mt!^oci55)s6!5n9%ykc%7@p*n$^$u5p1__f!rfk)u0tt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['35.238.216.214']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'helloword_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'topicos-ing-software',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': '35.238.216.214',
+        'PORT': '3306'
     }
 }
 
